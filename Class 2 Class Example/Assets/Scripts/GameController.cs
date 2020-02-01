@@ -1,6 +1,6 @@
 ﻿/*
 *(Christopher Green)
-*(Game Controller.cs)
+*(GameController.cs)
 * (Assignment 2)
 * (This scripts handles the timers and tutorial text as well as the game over condition)
 */
