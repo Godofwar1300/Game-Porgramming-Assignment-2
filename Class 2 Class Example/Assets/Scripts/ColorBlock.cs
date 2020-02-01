@@ -15,6 +15,8 @@ public abstract class ColorBlock : MonoBehaviour
 
     private Text colorText;
 
+    private string color;
+
     public virtual void DoChangeColor() { ChangeColorBehavior.ChangeColor(); }
 
     public void Start()
@@ -29,7 +31,7 @@ public abstract class ColorBlock : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            string color = "None";
+            color = "None";
 
             Destroy(GetComponent<ChangeColorBehavior>());
             ChangeColorBehavior = gameObject.AddComponent<ChangeColorWhite>();
@@ -40,7 +42,7 @@ public abstract class ColorBlock : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            string color = "Red";
+            color = "Red";
 
             Destroy(GetComponent<ChangeColorBehavior>());
             ChangeColorBehavior = gameObject.AddComponent<ChangeColorRed>();
@@ -50,7 +52,7 @@ public abstract class ColorBlock : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            string color = "Blue";
+            color = "Blue";
 
             Destroy(GetComponent<ChangeColorBehavior>());
             ChangeColorBehavior = gameObject.AddComponent<ChangeColorBlue>();
@@ -60,7 +62,7 @@ public abstract class ColorBlock : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            string color = "Green";
+            color = "Green";
 
             Destroy(GetComponent<ChangeColorBehavior>());
             ChangeColorBehavior = gameObject.AddComponent<ChangeColorGreen>();
@@ -70,7 +72,7 @@ public abstract class ColorBlock : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Alpha4))
         {
-            string color = "Yellow";
+            color = "Yellow";
 
             Destroy(GetComponent<ChangeColorBehavior>());
             ChangeColorBehavior = gameObject.AddComponent<ChangeColorYellow>();
@@ -80,7 +82,7 @@ public abstract class ColorBlock : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha5))
         {
-            string color = "Cyan";
+            color = "Cyan";
 
             Destroy(GetComponent<ChangeColorBehavior>());
             ChangeColorBehavior = gameObject.AddComponent<ChangeColorCyan>();
@@ -90,7 +92,7 @@ public abstract class ColorBlock : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha6))
         {
-            string color = "Magenta";
+            color = "Magenta";
 
             Destroy(GetComponent<ChangeColorBehavior>());
             ChangeColorBehavior = gameObject.AddComponent<ChangeColorMagenta>();
